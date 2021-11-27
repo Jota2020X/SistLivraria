@@ -71,18 +71,21 @@ namespace SistLivraria
             this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
             this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.cadastroToolStripMenuItem.Text = "Cadastro";
+            this.cadastroToolStripMenuItem.Click += new System.EventHandler(this.cadastroToolStripMenuItem_Click);
             // 
             // editorasToolStripMenuItem
             // 
             this.editorasToolStripMenuItem.Name = "editorasToolStripMenuItem";
             this.editorasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editorasToolStripMenuItem.Text = "Editoras";
+            this.editorasToolStripMenuItem.Click += new System.EventHandler(this.editorasToolStripMenuItem_Click);
             // 
             // autoresToolStripMenuItem
             // 
             this.autoresToolStripMenuItem.Name = "autoresToolStripMenuItem";
             this.autoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.autoresToolStripMenuItem.Text = "Autores";
+            this.autoresToolStripMenuItem.Click += new System.EventHandler(this.autoresToolStripMenuItem_Click);
             // 
             // livrosToolStripMenuItem
             // 
@@ -129,7 +132,7 @@ namespace SistLivraria
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             // 
             // aplicativosToolStripMenuItem
@@ -144,15 +147,16 @@ namespace SistLivraria
             // calculadoraToolStripMenuItem
             // 
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.calculadoraToolStripMenuItem.Text = "Calculadora";
             this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // separaPalavrasToolStripMenuItem
             // 
             this.separaPalavrasToolStripMenuItem.Name = "separaPalavrasToolStripMenuItem";
-            this.separaPalavrasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.separaPalavrasToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.separaPalavrasToolStripMenuItem.Text = "Separa Palavras";
+            this.separaPalavrasToolStripMenuItem.Click += new System.EventHandler(this.separaPalavrasToolStripMenuItem_Click);
             // 
             // fecharSistemaToolStripMenuItem
             // 
@@ -179,7 +183,7 @@ namespace SistLivraria
             this.Controls.Add(this.mnsUnico);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.mnsUnico;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema Livraria Parceria";

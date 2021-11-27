@@ -25,7 +25,41 @@ namespace SistLivraria
 
         private void fecharSistemaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (Confirma())
+            {
+                Application.Exit();
+            }
+        }
+
+        private void separaPalavrasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSepara objSepara = new FrmSepara(); // instanciamento de um objeto formulário baseado na classe FrmSepara
+            objSepara.ShowDialog();
+        }
+
+        private void editorasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEditora objEditora = new FrmEditora();
+            objEditora.ShowDialog();
+        }
+
+        static bool Confirma()
+        {
+            if (MessageBox.Show("Deseja realmente sair deste sistema?",
+                "Confirmação", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                return true;
+            else return false;
+        }
+
+        private void autoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAutor objAutor = new FrmAutor();
+            objAutor.ShowDialog();
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
